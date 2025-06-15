@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Majlis Ihtifal Anugerah Kecemerlangan Akademik 2024/2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      color: #333;
+    }
+    .arabic-text {
+      font-family: 'Amiri', serif;
+      font-size: 1.5rem;
+      color: #065f46; /* green-700 */
+      text-align: center;
+      line-height: 1.4;
+    }
+    .glow-red {
+      color: #b91c1c; /* red-700 */
+      text-shadow:
+        0 0 5px #f87171,
+        0 0 10px #ef4444,
+        0 0 20px #dc2626,
+        0 0 30px #b91c1c;
+    }
+    .glow-button {
+      background: #fbbf24; /* yellow-400 */
+      box-shadow: 0 0 15px #fbbf24;
+      color: #b91c1c;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: box-shadow 0.3s ease;
+    }
+    .glow-button:hover {
+      box-shadow: 0 0 25px #fbbf24;
+    }
+    .card {
+      background: rgba(255 255 255 / 0.85);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      background-color: #fbbf24;
+      box-shadow: 0 4px 12px rgba(251,191,36,0.6);
+      color: #b91c1c;
+    }
+    /* Navigation dots */
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 6px;
+      background-color: #fbbf24;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .dot.active {
+      background-color: #b91c1c;
+      box-shadow: 0 0 8px #b91c1c;
+    }
+    /* School logo styling */
+    .logo-container {
+      background: #b91c1c;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 
+        0 0 15px rgba(185, 28, 28, 0.5),
+        0 0 30px rgba(185, 28, 28, 0.3),
+        0 0 45px rgba(185, 28, 28, 0.2);
+      animation: logoGlow 2s ease-in-out infinite alternate;
+    }
+    @keyframes logoGlow {
+      from {
+        box-shadow: 
+          0 0 15px rgba(185, 28, 28, 0.5),
+          0 0 30px rgba(185, 28, 28, 0.3),
+          0 0 45px rgba(185, 28, 28, 0.2);
+      }
+      to {
+        box-shadow: 
+          0 0 20px rgba(185, 28, 28, 0.6),
+          0 0 40px rgba(185, 28, 28, 0.4),
+          0 0 60px rgba(185, 28, 28, 0.3);
+      }
+    }
+    .school-logo {
+      width: 100px;
+      height: auto;
+      filter: brightness(1) contrast(1.2);
+    }
+    /* Scrollbar hidden for body */
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center p-6">
+
+  <div class="bg-yellow-50 bg-opacity-90 rounded-lg p-8 max-w-4xl w-full shadow-lg">
+    <!-- Logo -->
+    <div class="flex justify-center mb-4">
+      <div class="logo-container">
+        <img src="./school-logo.png" alt="Logo" class="school-logo object-contain" />
+      </div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="h-1 bg-yellow-400 rounded-full mb-6 relative">
+      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-yellow-400 rounded-full"></div>
+    </div>
+
+    <!-- Title -->
+    <div class="bg-white bg-opacity-80 rounded-md p-6 mb-6 text-center shadow-md">
+      <h1 class="text-3xl glow-red font-semibold mb-2">Majlis Ihtifal Anugerah Kecemerlangan Akademik</h1>
+      <p class="text-xl glow-red font-semibold">Maahad Al-Ummah, Chemor</p>
+    </div>
+
+    <!-- Session Button -->
+    <div class="flex justify-center mb-6">
+      <button class="glow-button">Sesi 2024/2025</button>
+    </div>
+
+    <!-- Arabic Text -->
+    <div class="bg-green-100 bg-opacity-50 rounded-md p-6 mb-6 text-center shadow-md">
+      <p class="arabic-text mb-2">بسم الله الرحمن الرحيم</p>
+      <p class="text-green-800 font-semibold">Dengan Nama Allah Yang Maha Pemurah Lagi Maha Penyayang</p>
+    </div>
+
+    <!-- Slide navigation dots -->
+    <div class="flex justify-center space-x-4 mb-6">
+      <span class="dot active" aria-label="Slide 1"></span>
+      <span class="dot" aria-label="Slide 2"></span>
+      <span class="dot" aria-label="Slide 3"></span>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="flex justify-between mb-6">
+      <button id="prevBtn" class="px-4 py-2 border border-yellow-400 rounded hover:bg-yellow-400 hover:text-white transition">Sebelumnya</button>
+      <button id="nextBtn" class="px-4 py-2 border border-yellow-400 rounded hover:bg-yellow-400 hover:text-white transition">Seterusnya</button>
+    </div>
+
+    <!-- Navigasi Slaid -->
+    <div class="bg-white bg-opacity-90 rounded-md p-6 shadow-md">
+      <h2 class="text-red-700 font-semibold mb-4 flex items-center space-x-2">
+        <span>🔴</span>
+        <span>Navigasi Slaid</span>
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="card">Majlis Ihtifal Anugerah Kecemerlangan Akademik</div>
+        <div class="card">Maklumat Majlis</div>
+        <div class="card">Barisan Pentadbir Maahad Al-Ummah</div>
+        <div class="card">Jawatankuasa Penganjur dan Pelaksana</div>
+        <div class="card">Anugerah Kecemerlangan Peperiksaan Awam</div>
+        <div class="card">Anugerah Kecemerlangan Al-Quran & Tahfiz</div>
+        <div class="card">Anugerah UASA 2024/2025</div>
+        <div class="card">Anugerah PASA 2024/2025</div>
+        <div class="card">Panitia Mata Pelajaran Terbaik SPM 2024/2025</div>
+        <div class="card">Anugerah Tokoh Murid</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Slide navigation dots and buttons logic (basic example)
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentSlide = 0;
+    const totalSlides = dots.length;
+
+    function updateSlide(index) {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+      currentSlide = index;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      let newIndex = currentSlide - 1;
+      if (newIndex < 0) newIndex = totalSlides - 1;
+      updateSlide(newIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      let newIndex = currentSlide + 1;
+      if (newIndex >= totalSlides) newIndex = 0;
+      updateSlide(newIndex);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        updateSlide(index);
+      });
+    });
+  </script>
+
+</body>
+</html>
